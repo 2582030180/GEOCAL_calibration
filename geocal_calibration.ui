@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1681</width>
+    <height>1139</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>70</y>
+      <width>1500</width>
+      <height>1010</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1010</width>
+      <height>700</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#frame{
+background-color: rgb(255, 255, 255);
+border-top-left-radius:20px;
+border-top-right-radius:20px;
+border-bottom-left-radius:20px;
+border-bottom-right-radius:20px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QFrame" name="frame_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#frame_2{
+background-color: rgb(255, 255, 255);
+border-top-left-radius:20px;
+border-top-right-radius:20px;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QFrame" name="frame_4">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item alignment="Qt::AlignLeft">
+            <widget class="QPushButton" name="pushButton">
+             <property name="styleSheet">
+              <string notr="true">border:none;
+font: 12pt &quot;幼圆&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Geocal calibration</string>
+             </property>
+             <property name="icon">
+              <iconset resource="data/res.qrc">
+               <normaloff>:/icons/icon/gc.png</normaloff>:/icons/icon/gc.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignRight">
+         <widget class="QFrame" name="frame_5">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+border:none;
+}
+QPushButton:hover{
+padding-bottom:5px;
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="data/res.qrc">
+               <normaloff>:/icons/icon/small.png</normaloff>:/icons/icon/small.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="data/res.qrc">
+               <normaloff>:/icons/icon/close.png</normaloff>:/icons/icon/close.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>10</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QFrame" name="frame_6">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#frame_6{
+	background-color:rgb(91, 169, 170);
+border-bottom-left-radius:20px;
+border-top-right-radius:20px;
+}
+QPushButton{
+border:none;
+	color:rgb(255, 255, 255);
+	font: 12pt &quot;幼圆&quot;;
+}
+QPushButton:hover{
+	color: rgb(0, 255, 0);
+}
+QPushButton:pressed{
+padding-left:5px;
+padding-top:5px;
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="text">
+              <string>Grid Detection</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="text">
+              <string>Calibrate</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_7">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>3</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#frame_7{
+	background-color: rgb(255, 255, 255);
+border-bottom-right-radius:20px;
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QStackedWidget" name="stackedWidget">
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <widget class="QWidget" name="page_detect">
+              <widget class="QPushButton" name="pushButton_upload">
+               <property name="geometry">
+                <rect>
+                 <x>410</x>
+                 <y>60</y>
+                 <width>261</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+	color: rgb(255, 255, 255);
+	background-color: rgb(75, 140, 170);
+border-radius:10px;
+}
+QPushButton:pressed{
+padding-left:5px;
+padding-top:5px;
+}
+QPushButton:hover{
+	color: rgb(0, 255, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Upload images</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_detect">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>610</y>
+                 <width>271</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+	color: rgb(255, 255, 255);
+	background-color: rgb(75, 140, 170);
+border-radius:10px;
+}
+QPushButton:pressed{
+padding-left:5px;
+padding-top:5px;
+}
+QPushButton:hover{
+	color: rgb(0, 255, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Detect</string>
+               </property>
+              </widget>
+              <widget class="QListWidget" name="listWidget_img">
+               <property name="geometry">
+                <rect>
+                 <x>60</x>
+                 <y>130</y>
+                 <width>1011</width>
+                 <height>311</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QListWidget{
+	background-color: rgb(83, 170, 163);
+    border: 1px solid #cccccc;
+	font: 10pt &quot;幼圆&quot;;
+}
+QListWidget::item:selected {
+    background-color: #008CBA;
+    color: white;
+}
+
+QListWidget::item:hover {
+    background-color: #e6f7ff;
+}</string>
+               </property>
+               <property name="selectionRectVisible">
+                <bool>false</bool>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_change">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>480</y>
+                 <width>271</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 10pt &quot;幼圆&quot;;
+border-radius:5px;
+background-color: rgb(75, 140, 170);
+	color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+padding-left:5px;
+padding-top:5px;
+}
+QPushButton:hover{
+	color: rgb(0, 255, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Change results output folder:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_output">
+               <property name="geometry">
+                <rect>
+                 <x>400</x>
+                 <y>490</y>
+                 <width>661</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{
+	background-color: rgb(65, 170, 163);
+border-radius:5px;
+}</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_7">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>720</y>
+                 <width>271</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 10pt &quot;幼圆&quot;;
+border-radius:5px;
+background-color: rgb(75, 140, 170);
+	color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+padding-left:5px;
+padding-top:5px;
+}
+QPushButton:hover{
+	color: rgb(0, 255, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>See detection result image</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_8">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>780</y>
+                 <width>271</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 10pt &quot;幼圆&quot;;
+border-radius:5px;
+background-color: rgb(75, 140, 170);
+	color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+padding-left:5px;
+padding-top:5px;
+}
+QPushButton:hover{
+	color: rgb(0, 255, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Detected points coordinates</string>
+               </property>
+              </widget>
+              <widget class="QProgressBar" name="progressBar_detect">
+               <property name="geometry">
+                <rect>
+                 <x>410</x>
+                 <y>610</y>
+                 <width>641</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QProgressBar{
+border-radius:5px;
+
+}</string>
+               </property>
+               <property name="maximum">
+                <number>0</number>
+               </property>
+               <property name="value">
+                <number>-1</number>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="page_calibrate">
+              <widget class="QPushButton" name="pushButton_calibrate">
+               <property name="geometry">
+                <rect>
+                 <x>570</x>
+                 <y>350</y>
+                 <width>321</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+	color: rgb(255, 255, 255);
+	background-color: rgb(75, 140, 170);
+border-radius:10px;
+}
+QPushButton:pressed{
+padding-left:5px;
+padding-top:5px;
+}
+QPushButton:hover{
+	color: rgb(0, 255, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Calibrate</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_9">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>220</y>
+                 <width>321</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 10pt &quot;幼圆&quot;;
+border-radius:5px;
+background-color: rgb(75, 140, 170);
+	color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+padding-left:5px;
+padding-top:5px;
+}
+QPushButton:hover{
+	color: rgb(0, 255, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Change results output folder:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit">
+               <property name="geometry">
+                <rect>
+                 <x>440</x>
+                 <y>220</y>
+                 <width>631</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{
+	background-color: rgb(65, 170, 163);
+border-radius:5px;
+}</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_12">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>470</y>
+                 <width>321</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 10pt &quot;幼圆&quot;;
+border-radius:5px;
+background-color: rgb(75, 140, 170);
+	color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+padding-left:5px;
+padding-top:5px;
+}
+QPushButton:hover{
+	color: rgb(0, 255, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Calibration Parameter</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_13">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>110</y>
+                 <width>321</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 10pt &quot;幼圆&quot;;
+border-radius:5px;
+background-color: rgb(75, 140, 170);
+	color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+padding-left:5px;
+padding-top:5px;
+}
+QPushButton:hover{
+	color: rgb(0, 255, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Choose file for calibration:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_2">
+               <property name="geometry">
+                <rect>
+                 <x>440</x>
+                 <y>110</y>
+                 <width>631</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{
+	background-color: rgb(65, 170, 163);
+border-radius:5px;
+}</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_11">
+               <property name="geometry">
+                <rect>
+                 <x>570</x>
+                 <y>590</y>
+                 <width>321</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+	color: rgb(255, 255, 255);
+	background-color: rgb(75, 140, 170);
+border-radius:10px;
+}
+QPushButton:pressed{
+padding-left:5px;
+padding-top:5px;
+}
+QPushButton:hover{
+	color: rgb(0, 255, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Generate calibration effect</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_14">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>720</y>
+                 <width>321</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 10pt &quot;幼圆&quot;;
+border-radius:5px;
+background-color: rgb(75, 140, 170);
+	color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+padding-left:5px;
+padding-top:5px;
+}
+QPushButton:hover{
+	color: rgb(0, 255, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Calibration effect image</string>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="data/res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1085</x>
+     <y>101</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1155</x>
+     <y>62</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1059</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1115</x>
+     <y>23</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

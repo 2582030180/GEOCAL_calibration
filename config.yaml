@@ -1,0 +1,38 @@
+# 存储所有输出结果的文件夹
+output_path:
+  output_folder: "11111"
+
+# 存储中间结果
+first_centroid:
+  output_folder: "first_centroid"
+  min_area: 1
+  threshold_value: 19       # 质心法提取的阈值
+
+exposure_fusion:
+  root_path: "first_centroid"
+
+
+centroid:
+  threshold_value: 35    # 这个阈值可以微调以获得更好的提取结果，噪声比较多时可以适当提高，一般20-60之间
+  min_area: 1
+
+grid_generation:
+# 如果想得到更准确的标定结果，需要完全让过曝点拍摄到图片的正中心，这样才能检测到准确的中心点
+# 如果不能保证，则需要使用下面一行代码手动输入中心点的像素值，并且在脚本里作相应更改
+#  center_like: np.array([361, 288])
+# 中心点逻辑是图片画幅的一半
+
+  # 搜索半径，单位是像素。需要使用ImageJ计算一下两个点之间的像素数。它的值需要保证：对于每个点，以自己为圆心，画出的圆包含离自己
+  # 最近的四个邻居，但不能包含斜对角的邻居。
+#  示意图如下
+#  *(1)     *(2)     *（5）
+#
+#
+#  *(3)     *(4)
+#  如果以点2为圆心，r需要大于（1和2）（2和4）（2和5）之间的距离，小于（2，3）之间的距离
+  r: 15
+
+#  最小距离和最大距离不需要太严格，min_distance小于（1和2）之间的距离，max_distance大于（1和2）之间的距离且小于（1和5）之间的距离
+  min_distance: 10
+  max_distance: 16
+  font_size: 4
